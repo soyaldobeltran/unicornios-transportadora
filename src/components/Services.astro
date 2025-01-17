@@ -1,0 +1,84 @@
+---
+import Image from "astro/components/Image.astro";
+import Van from "../../public/van.webp";
+---
+
+<section class="pt-32 flex flex-col justify-center items-center gap-24">
+  <p
+    class="text-center bg-[#d4af3756] rounded-full py-5 px-16 w-80 font-light text-[#D4AF37] text-sm self-center"
+  >
+    Servicios que Ofrecemos
+  </p>
+  <Image
+    src={Van}
+    alt={"Imagen de una Van"}
+    loading={"lazy"}
+    class="w-full lg:w-1/2"
+  />
+</section>
+<section class="py-28 px-8 grid grid-cols-1 gap-24 sm:grid-cols-3">
+  <article
+    class="flex flex-col items-center gap-4 max-w-96 p-4 border-solid border-[#D4AF37] lg:border-r"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      height="48px"
+      viewBox="0 -960 960 960"
+      width="48px"
+      fill="#FFFFFF"
+      ><path
+        d="M697-623h60v-60h-60v60Zm0 171h60v-60h-60v60Zm0 170h60v-60h-60v60Zm-56 162v-60h219v-600H465v112l-60-42v-130h515v720H641Zm-601 0v-390l271-194 270 194v390H364v-201H258v201H40Zm60-60h98v-201h226v201h97v-299L311-630 100-478.58V-180Zm541-365ZM424-180v-201H198v201-201h226v201Z"
+      ></path></svg
+    >
+    <h3 class="text-2xl">Translados Abiertos</h3>
+    <p class="text-center sm:text-right">
+      Aeropuerto de Tulum al Centro de Tulum, Airbnb, y Costera de Tulum. cenas
+      en los mejores restaurantes de la costera, sin excepción. Beach Clubs:
+      Transporte cómodo de ida y vuelta.
+    </p>
+  </article>
+  <article
+    class="flex flex-col items-center gap-4 max-w-96 p-4 border-solid border-[#D4AF37] lg:border-r"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      height="48px"
+      viewBox="0 -960 960 960"
+      width="48px"
+      fill="#FFFFFF"
+      ><path
+        d="m612-120-263-93-179 71q-17 9-33.5-1T120-173v-558q0-13 7.5-23t19.5-15l202-71 263 92 178-71q17-8 33.5 1.5T840-788v565q0 11-7.5 19T814-192l-202 72Zm-34-75v-505l-196-66v505l196 66Zm60 0 142-47v-512l-142 54v505Zm-458-12 142-54v-505l-142 47v512Zm458-493v505-505Zm-316-66v505-505Z"
+      ></path></svg
+    >
+    <h3 class="text-2xl">Tours Perzonalizados</h3>
+    <p class="text-center sm:text-right">
+      Explora las majestuosas ruinas de Tulum. Sumérgete en la magia de los
+      cenotes y los puntos de interés cercanos. Servicios por medio día o día
+      completo, con bebidas de cortesía incluidas en el paquete Full Day.
+    </p>
+  </article>
+  <article
+    class="flex flex-col items-center gap-4 max-w-96 p-4 border-solid border-[#D4AF37] lg:border-r"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      height="48px"
+      viewBox="0 -960 960 960"
+      width="48px"
+      fill="#FFFFFF"
+      ><path
+        d="M178-80h-58v-60h58q40 0 79-11t76-34q35 22 72 32.5t75 10.5q38 0 75-10.5t72-32.5q38 23 77.5 34t78.5 11h57v60h-57q-39 0-78-9t-77-28q-38 19-75 28t-73 9q-36 0-73-9.5T333-117q-38 18-77.5 27.5T178-80Zm302-149q-36 0-75.5-20.5T330-307q-33 33-71 52.5T182-230l-71-245q-4-12 2-22.5t18-14.5l55-16v-190q0-25 17.5-42.5T246-778h132v-103h204v103h132q25 0 42.5 17.5T774-718v190l55 16q12 4 18 14.5t2 22.5l-71 245q-39-5-77-24.5T630-307q-35 37-74.5 57.5T480-229Zm1-60q32 0 58.5-18t47.5-43l41-48 36 38q16 17 34 31t38 25l48-159-304-92-304 92 48 159q20-11 38-25t34-31l36-38 41 48q22 25 49 43t59 18ZM246-547l234-71 234 72v-172H246v171Zm234 125Z"
+      ></path></svg
+    >
+    <h3 class="text-2xl">Yates en Puerto Aventuras</h3>
+    <p class="text-center sm:text-right">
+      Traslado redondo de Tulum al Yate, con comodidad y puntualidad. Ideal para
+      aventuras privadas y momentos inolvidables en el mar.
+    </p>
+  </article>
+</section>
+<style>
+  h3 {
+    font-family: "DM Serif Display", "Times New Roman", Times, serif;
+  }
+</style>
