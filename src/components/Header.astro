@@ -2,11 +2,16 @@
 import Image from "astro/components/Image.astro";
 import Background from "../../public/background.svg";
 import Logo from "../../public/logo.png";
+import { lazy } from "astro:schema";
 ---
 
+<Image
+  src={Logo}
+  alt="logo"
+  class="absolute -z-100 w-[1px]"
+  loading={"eagerly-loaded"}
+/>
 <header class="w-full h-full flex flex-col justify-center items-center gap-3">
-  <Image src={Logo} alt="logo" class="hidden" />
-
   <h1 class="text-center text-6xl mb-12 lg:text-8xl">
     Conexión <br />
     <span class="text-[#D4AF37]">exclusiva</span> Tulum
