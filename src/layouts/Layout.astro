@@ -1,5 +1,6 @@
 ---
 import Logo from "../../public/logo.png";
+import { ClientRouter, fade, slide } from "astro:transitions";
 ---
 
 <!doctype html>
@@ -10,6 +11,7 @@ import Logo from "../../public/logo.png";
     <link rel="icon" type="image/png" href="/logo.png" />
     <meta name="generator" content={Astro.generator} />
     <title>Unicornios Transportación</title>
+    <ClientRouter />
   </head>
   <body>
     <slot />

@@ -1,82 +1,18 @@
 ---
 import Image from "astro/components/Image.astro";
 import Van from "../../public/van.webp";
+const { titulo } = Astro.props;
 ---
 
 <section class="pt-32 flex flex-col justify-center items-center gap-24">
   <p
     class="text-center bg-[#d4af3756] rounded-full py-5 px-16 w-80 font-light text-[#D4AF37] text-sm self-center"
   >
-    Porqué Elegirnos
+    {titulo}
   </p>
 </section>
 <section class="py-28 px-8 grid grid-cols-1 gap-24 sm:grid-cols-4">
-  <article
-    class="flex flex-col items-center gap-4 max-w-96 p-4 border-solid border-[#D4AF37] lg:border-r"
-  >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      height="48px"
-      viewBox="0 -960 960 960"
-      width="48px"
-      fill="#D4AF37"
-      ><path
-        d="M540-420q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35ZM220-280q-24.75 0-42.37-17.63Q160-315.25 160-340v-400q0-24.75 17.63-42.38Q195.25-800 220-800h640q24.75 0 42.38 17.62Q920-764.75 920-740v400q0 24.75-17.62 42.37Q884.75-280 860-280H220Zm100-60h440q0-42 29-71t71-29v-200q-42 0-71-29t-29-71H320q0 42-29 71t-71 29v200q42 0 71 29t29 71Zm480 180H100q-24.75 0-42.37-17.63Q40-195.25 40-220v-460h60v460h700v60ZM220-340v-400 400Z"
-      ></path></svg
-    >
-    <h3 class="text-2xl text-center">Pago Seguro y Anticipado</h3>
-    <p class="text-center sm:text-center">
-      Simplifica tu experiencia y garantiza tu lugar antes de abordar.
-    </p>
-  </article>
-  <article
-    class="flex flex-col items-center gap-4 max-w-96 p-4 border-solid border-[#D4AF37] lg:border-r"
-  >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      height="48px"
-      viewBox="0 -960 960 960"
-      width="48px"
-      fill="#D4AF37"
-      ><path
-        d="M480-120 80-600l120-240h560l120 240-400 480ZM368-630h224l-75-150h-74l-75 150Zm82 381v-321H183l267 321Zm60 0 267-321H510v321Zm149-381h136l-75-150H584l75 150Zm-494 0h136l75-150H240l-75 150Z"
-      ></path></svg
-    >
-    <h3 class="text-2xl text-center">Confort y Estilo</h3>
-    <p class="text-center">Vehículos modernos y servicio de lujo.</p>
-  </article>
-  <article
-    class="flex flex-col items-center gap-4 max-w-96 p-4 border-solid border-[#D4AF37] lg:border-r"
-  >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      height="48px"
-      viewBox="0 -960 960 960"
-      width="48px"
-      fill="#D4AF37"
-      ><path
-        d="m437-306 223-223-43-43-180 180-94-94-43 43 137 137Zm42 224q-74 0-139.5-28t-114-76.5q-48.5-48.5-77-114T120-440.73q0-74.74 28.5-140Q177-646 225.5-695t114-77Q405-800 479-800t139.5 28Q684-744 733-695t77 114.27q28 65.26 28 140 0 74.73-28 140.23-28 65.5-77 114T618.5-110Q553-82 479-82Zm0-357ZM214-867l42 42L92-667l-42-42 164-158Zm530 0 164 158-42 42-164-158 42-42ZM479.04-142Q604-142 691-229.04q87-87.05 87-212Q778-566 690.96-653q-87.05-87-212-87Q354-740 267-652.96q-87 87.05-87 212Q180-316 267.04-229q87.05 87 212 87Z"
-      ></path></svg
-    >
-    <h3 class="text-2xl text-center">Flexibilidad y Puntualidad</h3>
-    <p class="text-center">Nos adaptamos a tu horario y necesidades.</p>
-  </article>
-  <article
-    class="flex flex-col items-center gap-4 max-w-96 p-4 border-solid border-[#D4AF37] lg:border-r"
-  >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      height="48px"
-      viewBox="0 -960 960 960"
-      width="48px"
-      fill="#D4AF37"
-      ><path
-        d="M444-610q-60 0-119 19.5T218-536l44 396h436l47-430h-48q-37 0-68-5.3-31-5.29-85-20.7-25-7-49.5-10.5T444-610Zm-233 7q51-32 111.5-49T444-670q30 0 59.5 4t56.5 12q51.13 14 78.23 19 27.09 5 57.77 5h56l21-190H187l24 217Zm51 523q-23 0-40.34-14.93Q204.31-109.86 202-133l-82-747h720l-82 747q-2.31 23.14-19.66 38.07Q721-80 698-80H262Zm182-60h254-436 182Z"
-      ></path></svg
-    >
-    <h3 class="text-2xl text-center">Bebidas de Cortesía</h3>
-    <p class="text-center">Disfrútalas en nuestro paquete Full Day.</p>
-  </article>
+  <slot />
 </section>
 <style>
   h3 {

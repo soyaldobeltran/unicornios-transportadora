@@ -5,16 +5,157 @@ import Header from "../components/Header.astro";
 import Services from "../components/Services.astro";
 import Contact from "../components/Contact.astro";
 import About from "../components/About.astro";
+import Image from "astro/components/Image.astro";
+import Logo from "../../public/logo.png";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-  <NavBar />
-  <Header />
-  <Services />
-  <About />
-  <Layout />
-  <Contact />
+  <NavBar idioma="Español" link="/es" />
+  <Header titulo="Exclusive" subtitulo="Connection" />
+  <Services titulo="Services We Offer">
+    <article
+      class="flex flex-col items-center gap-4 max-w-96 p-4 border-solid border-[#D4AF37] lg:border-r"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="48px"
+        viewBox="0 -960 960 960"
+        width="48px"
+        fill="#FFFFFF"
+        ><path
+          d="M697-623h60v-60h-60v60Zm0 171h60v-60h-60v60Zm0 170h60v-60h-60v60Zm-56 162v-60h219v-600H465v112l-60-42v-130h515v720H641Zm-601 0v-390l271-194 270 194v390H364v-201H258v201H40Zm60-60h98v-201h226v201h97v-299L311-630 100-478.58V-180Zm541-365ZM424-180v-201H198v201-201h226v201Z"
+        ></path></svg
+      >
+      <h3 class="text-2xl">Open Transfers</h3>
+      <p class="text-center sm:text-right">
+        Tulum Airport to Tulum Center, Airbnb, and Costera de Tulum. Dinners at
+        the best restaurants on the coast, without exception. Beach Clubs:
+        Comfortable transportation to and from the beach.
+      </p>
+    </article>
+    <article
+      class="flex flex-col items-center gap-4 max-w-96 p-4 border-solid border-[#D4AF37] lg:border-r"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="48px"
+        viewBox="0 -960 960 960"
+        width="48px"
+        fill="#FFFFFF"
+        ><path
+          d="m612-120-263-93-179 71q-17 9-33.5-1T120-173v-558q0-13 7.5-23t19.5-15l202-71 263 92 178-71q17-8 33.5 1.5T840-788v565q0 11-7.5 19T814-192l-202 72Zm-34-75v-505l-196-66v505l196 66Zm60 0 142-47v-512l-142 54v505Zm-458-12 142-54v-505l-142 47v512Zm458-493v505-505Zm-316-66v505-505Z"
+        ></path></svg
+      >
+      <h3 class="text-2xl">Customized Tours</h3>
+      <p class="text-center sm:text-right">
+        Explore the majestic ruins of Tulum. Immerse yourself in the magic of
+        the cenotes and nearby points of interest. Half or full day services,
+        with complimentary beverages included in the Full Day package.
+      </p>
+    </article>
+    <article
+      class="flex flex-col items-center gap-4 max-w-96 p-4 border-solid border-[#D4AF37] lg:border-r"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="48px"
+        viewBox="0 -960 960 960"
+        width="48px"
+        fill="#FFFFFF"
+        ><path
+          d="M178-80h-58v-60h58q40 0 79-11t76-34q35 22 72 32.5t75 10.5q38 0 75-10.5t72-32.5q38 23 77.5 34t78.5 11h57v60h-57q-39 0-78-9t-77-28q-38 19-75 28t-73 9q-36 0-73-9.5T333-117q-38 18-77.5 27.5T178-80Zm302-149q-36 0-75.5-20.5T330-307q-33 33-71 52.5T182-230l-71-245q-4-12 2-22.5t18-14.5l55-16v-190q0-25 17.5-42.5T246-778h132v-103h204v103h132q25 0 42.5 17.5T774-718v190l55 16q12 4 18 14.5t2 22.5l-71 245q-39-5-77-24.5T630-307q-35 37-74.5 57.5T480-229Zm1-60q32 0 58.5-18t47.5-43l41-48 36 38q16 17 34 31t38 25l48-159-304-92-304 92 48 159q20-11 38-25t34-31l36-38 41 48q22 25 49 43t59 18ZM246-547l234-71 234 72v-172H246v171Zm234 125Z"
+        ></path></svg
+      >
+      <h3 class="text-2xl">Yachts in Puerto Aventuras</h3>
+      <p class="text-center sm:text-right">
+        Round trip transfer from Tulum to the Yacht, with comfort and
+        punctuality. Ideal for private adventures and unforgettable moments at
+        sea.
+      </p>
+    </article>
+  </Services>
+  <About titulo="Why Choose Us">
+    <article
+      class="flex flex-col items-center gap-4 max-w-96 p-4 border-solid border-[#D4AF37] lg:border-r"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="48px"
+        viewBox="0 -960 960 960"
+        width="48px"
+        fill="#D4AF37"
+        ><path
+          d="M540-420q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35ZM220-280q-24.75 0-42.37-17.63Q160-315.25 160-340v-400q0-24.75 17.63-42.38Q195.25-800 220-800h640q24.75 0 42.38 17.62Q920-764.75 920-740v400q0 24.75-17.62 42.37Q884.75-280 860-280H220Zm100-60h440q0-42 29-71t71-29v-200q-42 0-71-29t-29-71H320q0 42-29 71t-71 29v200q42 0 71 29t29 71Zm480 180H100q-24.75 0-42.37-17.63Q40-195.25 40-220v-460h60v460h700v60ZM220-340v-400 400Z"
+        ></path></svg
+      >
+      <h3 class="text-2xl text-center">Secure & Advance Payment</h3>
+      <p class="text-center sm:text-center">
+        Simplify your experience and guarantee your seat before boarding.
+      </p>
+    </article>
+    <article
+      class="flex flex-col items-center gap-4 max-w-96 p-4 border-solid border-[#D4AF37] lg:border-r"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="48px"
+        viewBox="0 -960 960 960"
+        width="48px"
+        fill="#D4AF37"
+        ><path
+          d="M480-120 80-600l120-240h560l120 240-400 480ZM368-630h224l-75-150h-74l-75 150Zm82 381v-321H183l267 321Zm60 0 267-321H510v321Zm149-381h136l-75-150H584l75 150Zm-494 0h136l75-150H240l-75 150Z"
+        ></path></svg
+      >
+      <h3 class="text-2xl text-center">Comfort & Style</h3>
+      <p class="text-center">Modern vehicles and luxury service.</p>
+    </article>
+    <article
+      class="flex flex-col items-center gap-4 max-w-96 p-4 border-solid border-[#D4AF37] lg:border-r"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="48px"
+        viewBox="0 -960 960 960"
+        width="48px"
+        fill="#D4AF37"
+        ><path
+          d="m437-306 223-223-43-43-180 180-94-94-43 43 137 137Zm42 224q-74 0-139.5-28t-114-76.5q-48.5-48.5-77-114T120-440.73q0-74.74 28.5-140Q177-646 225.5-695t114-77Q405-800 479-800t139.5 28Q684-744 733-695t77 114.27q28 65.26 28 140 0 74.73-28 140.23-28 65.5-77 114T618.5-110Q553-82 479-82Zm0-357ZM214-867l42 42L92-667l-42-42 164-158Zm530 0 164 158-42 42-164-158 42-42ZM479.04-142Q604-142 691-229.04q87-87.05 87-212Q778-566 690.96-653q-87.05-87-212-87Q354-740 267-652.96q-87 87.05-87 212Q180-316 267.04-229q87.05 87 212 87Z"
+        ></path></svg
+      >
+      <h3 class="text-2xl text-center">Flexibility & Punctuality</h3>
+      <p class="text-center">We adapt to your schedule and needs.</p>
+    </article>
+    <article
+      class="flex flex-col items-center gap-4 max-w-96 p-4 border-solid border-[#D4AF37] lg:border-r"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="48px"
+        viewBox="0 -960 960 960"
+        width="48px"
+        fill="#D4AF37"
+        ><path
+          d="M444-610q-60 0-119 19.5T218-536l44 396h436l47-430h-48q-37 0-68-5.3-31-5.29-85-20.7-25-7-49.5-10.5T444-610Zm-233 7q51-32 111.5-49T444-670q30 0 59.5 4t56.5 12q51.13 14 78.23 19 27.09 5 57.77 5h56l21-190H187l24 217Zm51 523q-23 0-40.34-14.93Q204.31-109.86 202-133l-82-747h720l-82 747q-2.31 23.14-19.66 38.07Q721-80 698-80H262Zm182-60h254-436 182Z"
+        ></path></svg
+      >
+      <h3 class="text-2xl text-center">Complimentary Beverages</h3>
+      <p class="text-center">Enjoy them in our Full Day package.</p>
+    </article>
+  </About>
+  <Contact
+    titulo="Book"
+    subtitulo="Now"
+    link="https://wa.me/529841381160?text=Hello%20I%20would%20like%20to%20book%20a%20service"
+  />
+  <footer class="flex justify-center p-4">
+    <Image
+      src={Logo}
+      alt="Exclusive Connection"
+      inferSize={true}
+      class="rounded-3xl w-full max-w-lg"
+    />
+  </footer>
 </Layout>

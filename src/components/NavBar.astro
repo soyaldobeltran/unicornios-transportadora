@@ -1,9 +1,10 @@
 ---
-
+const { idioma, link } = Astro.props;
 ---
 
 <nav>
   <h3 class="font-bold text-lg">Unicornios Transportación</h3>
+  <a href={link}>{idioma}</a>
 </nav>
 
 <style>
@@ -14,7 +15,7 @@
     border-bottom: solid 1px white;
     height: 4rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     z-index: 100;
   }

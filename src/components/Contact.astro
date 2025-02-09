@@ -1,14 +1,15 @@
 ---
 import Background from "../../public/background.svg";
+const { titulo, subtitulo, link } = Astro.props;
 ---
 
 <header class="w-full h-full flex flex-col justify-center items-center gap-3">
   <h1 class="text-center text-8xl mb-12 lg:text-8xl text-cyan-50">
-    ¡Reserva<br />
-    <span class="text-[#6c5b24]">Ahora</span>!
+    ¡{titulo}<br />
+    <span class="text-[#6c5b24]">{subtitulo}</span>!
   </h1>
   <a
-    href="https://wa.me/529841381160?text=Hola%20me%20gustaría%20reservar%20un%20traslado"
+    href={link}
     target="_blank"
     class="flex justify-center bg-[#d4af37bf] rounded-full py-5 px-16 w-80 font-semibold text-gray-500 text-sm"
   >
